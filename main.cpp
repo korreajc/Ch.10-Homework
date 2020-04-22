@@ -19,6 +19,8 @@ int main() {
 
   string spacedString = spaceString(firstString);
 
+  string pigLatinString = pigLatin(spacedString);
+
   cout << spacedString << endl;
 }
 
@@ -42,14 +44,29 @@ string spaceString(string sentence){
     }
 
   }
-  cout << sentence.length() << endl;
+  cout << "Length" << sentence.length() << endl;
   return sentence;
 }
 
 string pigLatin(string spacedSentence){
 
+for(int i = 0; i < spacedSentence.length(); i++){
+
+    if(spacedSentence[i] == ' '){
+
+      cout << "Zero Located at: " <<  i << endl;
+    }
 
 
+
+}
+  
+  
+
+
+
+
+  
 
 
 
