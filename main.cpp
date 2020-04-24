@@ -21,7 +21,6 @@ int main() {
 
   string pigLatinString = pigLatin(spacedString);
 
-  cout << spacedString << endl;
   cout << pigLatinString << endl;
 }
 
@@ -63,21 +62,15 @@ for( i = 0; i < spacedSentence.length(); i++){
 
       cout << "Zero Located at: " <<  i << endl;
       zeroLocation = i;
-      foundZero = true;
-      i = spacedSentence.length();
-
+      spacedSentence.insert(zeroLocation, "ay");
+      cout << spacedSentence << endl;
+      i = zeroLocation + 2;
     }
 
+   
+
+  
 }
-
-if(foundZero){
-
-  spacedSentence.insert(zeroLocation, "ay");
-  i = zeroLocation;
-
-}
-
-
 
 
   return spacedSentence;
